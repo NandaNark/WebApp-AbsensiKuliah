@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+  }
+  
+  body{
+    background: url(tabelbg.mp4);
+    overflow: scroll;
+  
+  }
+  
+  .card{
+    border: 10px solid #6e27d8;
+    border-radius: 30px;
+    background-color: #ffffff;
+  }
+  
+  .navbar{
+    color: #ffffff;
+    background-color: #413257;
+  }
+  
+  #video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#video-background video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}

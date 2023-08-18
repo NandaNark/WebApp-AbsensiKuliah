@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+  }
+  
+  :root {
+    --card-height: 65vh;
+    --card-width: calc(var(--card-height) / 1.5);
+  }
+  
+  
+  body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    background-color: #452B5D;
+  }
+  
+  
+  .card {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding: 20px;
+    max-width: 800px;
+    width: 1000px;
+    height: 630px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 5px;
+    max-width: 800px;
+    border: 1px solid #ccc;
+    border-radius: 40px; 
+    box-shadow: 0 2px 4px rgba(217, 135, 220, 0.1);
+    position: relative;
+    display: flex;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+/*   
+  .card:hover {
+    color: rgb(8, 21, 1);
+    transition: bacground-color 0.3s linear;
+  } */
+
+  .card:hover:before, .card:hover:after {
+    animation: none;
+    opacity: 100;
+  }
+  
+  
+  .card::before {
+    content: "";
+    width: 104%;
+    height: 104%;
+    border-radius: 40px;
+    background-image: linear-gradient(
+      var(--rotate)
+      , #52098e, #c4b3eb 43%, #452B5D);
+      position: absolute;
+      z-index: -1;
+      top: -2%;
+      left: -2%;
+      animation: spin 4.5s linear infinite;
+  }
+  
+  .card::after {
+    position: absolute;
+    content: "";
+    top: calc(var(--card-height) / 6);
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(0.8);
+    filter: blur(calc(var(--card-height) / 6));
+    background-image: linear-gradient(
+      var(--rotate)
+      , #5df2ff, #d8b1ff 43%, #ffd1e5, #365d2b);
+      opacity: 1;
+    transition: opacity .5s;
+    animation: spin 6.5s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      --rotate: 0deg;
+    }
+    100% {
+      --rotate: 360deg;
+    }
+  }
+  
+  a {
+    color: #212534;
+    text-decoration: none;
+
+  }
+  
+.btn-secondary,
+.btn-primary,
+.btn-dark {
+   margin-bottom: 5px;
+}
+
+.form-group {
+   margin-bottom: 2px;
+   padding-top: 2px;
+}
+
+.btn-primary,
+.btn-secondary {
+   margin-right: 10px;
+}

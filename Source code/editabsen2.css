@@ -1,0 +1,44 @@
+* {
+   padding: 0;
+   margin: 0;
+   outline: none;
+   border: none;
+}
+
+body {
+   overflow: scroll;
+   overflow-x: hidden;
+   margin-top: 10px;
+}
+
+
+.card {
+   margin-top: 4px;
+   margin-bottom: 20px;
+   border: 10px solid #0b1339;
+   border-radius: 40px;
+   background-color: #ffffff;
+   padding-bottom: 3px;
+   -webkit-border-radius: 40px;
+   -moz-border-radius: 40px;
+   -ms-border-radius: 40px;
+   -o-border-radius: 40px;
+}
+
+.navbar {
+   color: #ffffff;
+   background-color: #0b1339;
+}
+
+.navbar-brand {
+   color: rgb(252, 228, 255);
+}
+#kontak {
+   position: fixed;
+   right: 0;
+   bottom: 0;
+   min-width: 100%;
+   min-height: 100%;
+   filter: blur(1px);
+   -webkit-filter: blur(1px);
+}

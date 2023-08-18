@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+}
+
+body {
+  background-color: #695681;
+}
+
+.card {
+  border: 7px solid #bca8d4;
+  border-radius: 30px;
+  background-color: #fefdfe;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.navbar {
+  background-color: #452B5D;
+}
+
+.navbar-brand{
+  color: #d9caeb;
+}
+
+.text-center{
+  color:  #695681;
+}
+
+#kontak2 {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+}
